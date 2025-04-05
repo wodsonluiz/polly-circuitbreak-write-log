@@ -1,0 +1,57 @@
+<mxfile host="65bd71144e">
+    <diagram id="N6M8HGbanvwanJiqkKCu" name="Page-1">
+        <mxGraphModel dx="1059" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="ApplicationClient.Api" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="310" width="230" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" style="edgeStyle=none;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;strokeWidth=2;" edge="1" parent="1" source="3" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="310" width="30" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;strokeWidth=2;" edge="1" parent="1" source="5" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="ApplicationService.Api" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="820" y="190" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;fillColor=#1ba1e2;strokeColor=#006EAF;strokeWidth=2;" edge="1" parent="1" source="11" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="685" y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="" style="html=1;whiteSpace=wrap;shape=isoCube2;backgroundOutline=1;isoAngle=10.084617614746094;fillColor=#e3c800;fontColor=#000000;strokeColor=#B09500;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="290" width="90" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#1ba1e2;strokeColor=#006EAF;strokeWidth=2;" edge="1" parent="1" source="2" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=0;entryDy=25;entryPerimeter=0;strokeWidth=2;dashed=1;" edge="1" parent="1" source="11" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="685" y="215"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="Polly" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;strokeColor=none;strokeWidth=1;fillColor=#343A40;fontColor=#ffffff;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=0;fontStyle=1;fontSize=14;spacing=10;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="340" width="50" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;CircuitBreak&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;strong style=&quot;background-color: transparent; font-size: 12px;&quot; data-end=&quot;694&quot; data-start=&quot;673&quot;&gt;Closed (Fechado):&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt; Tudo normal. Requisições passam normalmente.&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; font-size: 12px;&quot; data-end=&quot;761&quot; data-start=&quot;743&quot;&gt;Open (Aberto):&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt; Ocorreu um número configurado de falhas consecutivas. O circuito abre e bloqueia novas chamadas por um tempo.&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;strong style=&quot;background-color: transparent; font-size: 12px;&quot; data-end=&quot;903&quot; data-start=&quot;875&quot;&gt;Half-Open (Meio Aberto):&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px; font-weight: normal;&quot;&gt; Após o tempo de espera, o Polly permite &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; font-size: 12px;&quot; data-end=&quot;968&quot; data-start=&quot;944&quot;&gt;uma chamada de teste&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px; font-weight: normal;&quot;&gt;.&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px; font-weight: normal;&quot;&gt;-&amp;gt; Se ela &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; font-size: 12px;&quot; data-end=&quot;996&quot; data-start=&quot;984&quot;&gt;funciona&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px; font-weight: normal;&quot;&gt;, o circuito &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; font-size: 12px;&quot; data-end=&quot;1018&quot; data-start=&quot;1009&quot;&gt;fecha&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px; font-weight: normal;&quot;&gt; novamente.&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px; font-weight: normal;&quot;&gt;-&amp;gt; Se &lt;/span&gt;&lt;strong style=&quot;background-color: transparent; font-size: 12px;&quot; data-end=&quot;1049&quot; data-start=&quot;1040&quot;&gt;falha&lt;/strong&gt;&lt;span style=&quot;background-color: transparent; font-size: 12px; font-weight: normal;&quot;&gt;, volta para o estado aberto.&lt;/span&gt;&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="20" width="445" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="WriteLog" style="shape=display;whiteSpace=wrap;html=1;size=0;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+                    <mxGeometry x="1090" y="200" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="WriteLog.File" style="shape=display;whiteSpace=wrap;html=1;size=0;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+                    <mxGeometry x="860" y="410" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
